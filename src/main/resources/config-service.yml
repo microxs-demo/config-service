@@ -1,0 +1,13 @@
+# Spring properties
+spring:
+  application:
+    name: config-service  # Service registers under this name
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/microxs-demo/application-configuration.git
+
+# HTTP Server
+server:
+  port: ${PORT:8888}   # HTTP (Tomcat) port
